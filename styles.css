@@ -540,8 +540,11 @@ body{
 /* Small phones */
 @media (max-width: 480px){
   .stage{
-    min-height: auto;
-    padding: 12px 10px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px 24px;
   }
 
   .card{
