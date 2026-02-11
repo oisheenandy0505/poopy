@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>For You 💌</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="stage">
+    <section class="card-wrap" aria-label="Interactive card">
+      <div
+        class="card"
+        id="card"
+        role="button"
+        tabindex="0"
+        aria-pressed="false"
+        aria-label="Tap to open the card"
+      >
+        <!-- Cover -->
+        <div class="card-cover" aria-hidden="true">
+          <div class="cover-inner">
+            <div class="cover-illustration">
+              <div class="cover-illustration-frame">
+                <!-- Paste the direct GIF image URL from Tenor as src below -->
+                <img
+                  src="https://media.tenor.com/Q9nqH-dv920AAAAi/hugs-hugging.gif"
+                  alt="A cute animated hug"
+                  class="cover-illustration-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="cover-text">
+              <h1 class="cover-title">I’m sorry.</h1>
+              <button class="cover-tap-btn" type="button">Tap to open</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating hearts on open -->
+        <div class="card-hearts" aria-hidden="true">
+          <span class="card-heart card-heart--1">❤</span>
+          <span class="card-heart card-heart--2">❤</span>
+          <span class="card-heart card-heart--3">❤</span>
+        </div>
+
+        <!-- Inside -->
+        <div class="card-inside" aria-hidden="true">
+          <header class="inside-header">
+            <h2 class="inside-title">Hey love 💗</h2>
+          </header>
+
+          <article class="message" id="message" aria-label="Message">
+            <p>I’ve been thinking about you, and I just want to say I’m really, genuinely sorry.</p>
+
+            <p>When you were trying to open up to me, I pulled away instead of leaning in and I know that must have hurt. I hate that I made you feel dismissed or disrespected when all you were doing was being honest with me.</p>
+
+            <p>Even if I was trying not to react badly, checking out still made you feel alone in that moment. And I’m really sorry for that. You didn’t deserve it.</p>
+
+            <p>I understand why you felt disappointed, especially because this isn’t the first time. I never want to be someone who makes you feel like your feelings aren’t safe with me. You matter to me so much more than my discomfort in a hard conversation.</p>
+
+            <p>I care about you deeply, and I’m taking this seriously. I’m learning how to stay present and softer when things feel hard, because you’re worth that effort.</p>
+
+            <p>Thank you for being patient with me and for telling me how you felt. I really love and value you.</p>
+
+            <p class="sig"> - always and forever yours</p>
+          </article>
+
+          <footer class="inside-footer">
+            <button class="close-btn" id="closeBtn" type="button" aria-label="Close card">
+              Close
+            </button>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
