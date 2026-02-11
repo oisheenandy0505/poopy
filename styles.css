@@ -36,7 +36,7 @@ body{
 }
 
 .card-wrap{
-  width: min(880px, 100%);
+  width: min(420px, 100%);
   display: grid;
   gap: 12px;
   justify-items: center;
@@ -125,7 +125,8 @@ body{
 
 .cover-illustration-frame{
   position: relative;
-  width: min(360px, 90vw);
+  width: 100%;
+  max-width: 360px;
   aspect-ratio: auto;
   border-radius: 24px;
   overflow: hidden;
@@ -543,23 +544,18 @@ body{
     padding: 12px 10px 20px;
   }
 
-  .card-wrap{
-    width: 100%;
-  }
-
-  /* let the card size itself on phone */
   .card{
-    height: auto;
+    height: auto;              /* let content define height */
   }
 
   .cover-inner{
-    gap: 12px;
-    padding-top: 28px;
+    gap: 10px;
+    padding-top: 24px;
     padding-bottom: 10px;
   }
 
   .cover-illustration-frame{
-    width: 78vw;
+    max-width: 100%;          /* fill card width without overflow */
   }
 
   .cover-title{
