@@ -539,29 +539,31 @@ body{
 /* Small phones */
 @media (max-width: 480px){
   .stage{
-    padding: 14px 10px 26px;
+    min-height: auto;
+    padding: 12px 10px 20px;
   }
 
   .card-wrap{
     width: 100%;
   }
 
+  /* let the card size itself on phone */
   .card{
-    height: clamp(420px, 78vh, 520px);
+    height: auto;
   }
 
   .cover-inner{
-    gap: 14px;
-    padding-top: 36px;
-    padding-bottom: 4px;
+    gap: 12px;
+    padding-top: 28px;
+    padding-bottom: 10px;
   }
 
   .cover-illustration-frame{
-    width: 82vw;
+    width: 78vw;
   }
 
   .cover-title{
-    font-size: 34px;
+    font-size: 32px;
     letter-spacing: 0.03em;
   }
 
@@ -571,20 +573,21 @@ body{
   }
 
   .card-hearts{
-    bottom: 14px;
+    bottom: 10px;
   }
 
   .card-inside{
-    padding: 18px 16px 12px;
+    padding: 18px 14px 14px;
   }
 
   .inside-title{
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .message{
     margin-top: 8px;
     padding: 12px 12px;
+    max-height: 58vh;
   }
 
   .message p{
