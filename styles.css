@@ -537,9 +537,59 @@ body{
 }
 
 /* Small phones */
-@media (max-width: 360px){
-  .inside-title{ font-size: 24px; }
-  .message p{ font-size: 16px; }
+@media (max-width: 480px){
+  .stage{
+    padding: 14px 10px 26px;
+  }
+
+  .card-wrap{
+    width: 100%;
+  }
+
+  .card{
+    height: clamp(420px, 78vh, 520px);
+  }
+
+  .cover-inner{
+    gap: 14px;
+    padding-top: 36px;
+    padding-bottom: 4px;
+  }
+
+  .cover-illustration-frame{
+    width: 82vw;
+  }
+
+  .cover-title{
+    font-size: 34px;
+    letter-spacing: 0.03em;
+  }
+
+  .cover-tap-btn{
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .card-hearts{
+    bottom: 14px;
+  }
+
+  .card-inside{
+    padding: 18px 16px 12px;
+  }
+
+  .inside-title{
+    font-size: 24px;
+  }
+
+  .message{
+    margin-top: 8px;
+    padding: 12px 12px;
+  }
+
+  .message p{
+    font-size: 16px;
+  }
 }
 
 /* Landscape layout tweaks for wider screens */
@@ -550,4 +600,3 @@ body{
   .card-inside{ padding: 26px 24px 18px; }
   .message{ margin-top: 10px; padding: 18px 18px; }
 }
-
