@@ -111,7 +111,7 @@ body{
   align-items: center;
   justify-content: center;
   gap: 18px;
-  padding-top: 46px; /* move whole stack down */
+  padding-top: 46px;
   padding-bottom: 6px;
 }
 
@@ -148,7 +148,6 @@ body{
   pointer-events:none;
 }
 
-/* tiny sparkles around GIF */
 .cover-illustration-frame::before{
   width:6px;
   height:6px;
@@ -452,7 +451,6 @@ body{
   outline-offset: 6px;
 }
 
-/* Breathing + glow when card is closed (cover showing) */
 .card[data-open="false"]{
   animation: cardBreath 7s ease-in-out infinite;
 }
@@ -537,7 +535,6 @@ body{
   }
 }
 
-/* Small phones */
 @media (max-width: 480px){
   .stage{
     min-height: 100vh;
@@ -548,7 +545,7 @@ body{
   }
 
   .card{
-    height: auto;              /* let content define height */
+    height: auto;
   }
 
   .cover-inner{
@@ -594,7 +591,6 @@ body{
   }
 }
 
-/* Landscape layout tweaks for wider screens */
 @media (min-width: 768px){
   .stage{ padding: 40px 32px 40px; }
   .card-wrap{ gap: 16px; }
